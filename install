@@ -1,0 +1,14 @@
+#!/bin/bash
+sudo apt remove --autoremove emacs emacs-common
+
+sudo add-apt-repository ppa:kelleyk/emacs
+
+sudo apt update
+
+sudo apt install emacs28
+git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
+
+echo 'export PATH="$HOME/.emacs.d/bin:$PATH" >> ~/.bashrc'
+source ~/.bashrc
+
+~/.emacs.d/bin/doom install
