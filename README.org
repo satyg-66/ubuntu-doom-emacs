@@ -79,7 +79,7 @@ To speed up the launch of Doom-Emacs, I suggest to add the daemon (server) to au
 ** CREATE ALIAS
 By creating an alias to launch Doom-Emacs you shorten the time and make it easier to launch. This can be done by adding the following alias to your .bashrc.
 
-=alias emacs= =="emacsclient -c -a 'emacs'"=
+alias emacs="emacsclient -c -a 'emacs'"
 
 After adding the alias, make sure to run the command =source ~/.bashrc= to apply.
 
@@ -92,4 +92,4 @@ Move to applications directory
 Make a copy of Emacs desktop file
 =cp emacs.desktop emacsclient.desktop=
 
-Open =emacsclient.desktop= and change the =Name= to =emacsclient (GUI)= and the =Exec= to =/usr/bin/emacsclient -c -a 'emacs'=
+Open emacsclient.desktop and change the Name to emacsclient (GUI) and the Exec to /usr/bin/emacsclient -c -a 'emacs'
